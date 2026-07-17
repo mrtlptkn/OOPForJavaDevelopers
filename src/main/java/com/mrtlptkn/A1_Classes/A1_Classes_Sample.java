@@ -9,6 +9,20 @@ public class A1_Classes_Sample {
         User user1 = new User("Jane Doe", "jane.doe@test.com");
         User user2 = new User("Jane Doe", "jane_doe@test.com"); // Bu emailden var o yüzden başka bir öneri sunduk.
 
+        User user4 = null;
+
+        user4 = new User("Mike","mike.doe@test.com");
+
+        // user4 referansını user5 eşitleyelim.
+        User user5 = user4;
+        user5.setPassword("Password1");
+
+        // User5 değeri değişince user4 referansıda güncellenir mi ?
+
+        System.out.println("user4 reference is equal to user5 -> " + user5.equals(user4));
+
+
+
         // Örnek Boş consturtor ile üretim
         User user3 = new User();
         user3.setFullName("Jack Doe");
@@ -34,6 +48,14 @@ public class A1_Classes_Sample {
 
         user2.setPassword("9878432bfn@fdsad");
         System.out.println("user2 ->" +  user2.getPassword());
+
+
+        // value types
+        int x = 10;
+        int y = 15;
+        x = y; // x -> 15
+        y = 20; // x -> hala 15 y ise 20 olur
+        // x.eqauls(y) -> false -> çünkü referans tip değiller.
 
     }
 }
