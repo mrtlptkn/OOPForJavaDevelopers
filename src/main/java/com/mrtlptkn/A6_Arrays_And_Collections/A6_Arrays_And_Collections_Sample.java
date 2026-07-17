@@ -2,9 +2,7 @@ package com.mrtlptkn.A6_Arrays_And_Collections;
 
 import com.mrtlptkn.A1_Classes.User;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 public class A6_Arrays_And_Collections_Sample {
 
@@ -72,6 +70,21 @@ public class A6_Arrays_And_Collections_Sample {
             System.out.println("User Full Name: " + user.getFullName() + ", Email: " + user.getEmail());
         }
 
+
+        // key value pair kullanırız.
+        // K -> Key,V -> Value
+        Map<String,String> d = new HashMap<>();
+        d.put("hello","greetings");
+        d.put("no","usage not allowed");
+        d.put("yes","usage allowed");
+        d.put("hello","greetings again"); // aynı key değerini tekrar eklersek önceki value silinir ve yeni value eklenir.
+
+        d.get("hello"); // key ile value alırız
+        d.remove("no"); // key ile value sileriz
+        d.size();
+        d.forEach((key, value) -> {
+            System.out.println("Key: " + key + ", Value: " + value);
+        });
 
         // Map anlatımı
         // Generic Class
