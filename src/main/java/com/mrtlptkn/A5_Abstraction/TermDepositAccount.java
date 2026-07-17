@@ -13,7 +13,11 @@ public class TermDepositAccount extends Account {
     private final LocalDate termDate;
 
     public TermDepositAccount(BigDecimal balance, LocalDate termDate) {
+        // balance değerini super sınıfın contructora gönder.
+        // kalıtım alaınan sınıfta constructor varsa super kullanılır
         super(balance);
+        // javada contructorda eğer super değer dönderiyorsak ki kalıtım varsa mecburuz o zaman
+        // sınıfın içerisine contructor üzerinden değer getirmek istersek this ile super keyword sonra yaparız.
         this.termDate = termDate;
     }
 

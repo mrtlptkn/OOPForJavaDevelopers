@@ -28,7 +28,6 @@ public abstract class Account {
         this.balance = balance;
     }
 
-
     // para yatırma
     // para yatırma nasıl bir algoritma hiçbir fikrimiz yok ama bu işlemin olması gerektiğini biliyor
     // abstractiondaki amaç yol gösterme
@@ -36,6 +35,4 @@ public abstract class Account {
 
     // para çekme
     public abstract void moneyOut(BigDecimal amount);
-
-
 }
