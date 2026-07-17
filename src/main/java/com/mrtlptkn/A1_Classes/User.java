@@ -29,7 +29,7 @@ public class User {
 
     // fullName bilgisini dışarıdan class çağırımında okumak için kullanırız
     public String getFullName() {
-        return fullName;
+        return this.fullName;
     }
 
     // eğer fullName güncellemek değiştirmek istersek setter kullanırız.
@@ -38,7 +38,7 @@ public class User {
     }
 
     public String getEmail(){
-        return email;
+        return this.email;
     }
 
     public void setEmail(String email){
@@ -46,7 +46,7 @@ public class User {
     }
 
     public String getPassword(){
-        return password;
+        return  this.password;
     }
 
     public void setPassword(String password){
